@@ -1,12 +1,19 @@
 package com.themeshop.themeshop.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.DecimalMin;
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotBlank;
+import lombok.Getter;
+import lombok.Setter;
+
+import java.util.List;
 
 @Entity
 @Table(name="products")
+@Setter
+@Getter
 public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
@@ -27,4 +34,8 @@ public class Product {
     @Min(value = 1, message = "Số lượng phải lớn hơn bằng 1")
     private long quantity;
     private long sold;
+
+    @OneToMany(mappedBy = "product")
+    @JsonIgnore
+    private List<OrderDetail> orderDetails;
 }
