@@ -33,8 +33,6 @@ public class User {
     private String address;
     private String phone;
     private String avatar;
-    private String demoLink;
-    private String sourceLink;
 
     @ManyToOne
     @JoinColumn(name = "role_id")

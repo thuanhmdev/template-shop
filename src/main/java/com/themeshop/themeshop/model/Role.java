@@ -1,7 +1,9 @@
 package com.themeshop.themeshop.model;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.util.List;
@@ -10,6 +12,8 @@ import java.util.List;
 @Table(name = "roles")
 @Setter
 @Getter
+@NoArgsConstructor
+@AllArgsConstructor
 public class Role {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
@@ -21,5 +25,4 @@ public class Role {
     @OneToMany(mappedBy = "role")
     @JsonIgnore
     private List<User> users;
-
 }
