@@ -9,8 +9,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="Themeshop"/>
     <meta name="author" content="ThuanHM"/>
-    <title>Admin-Themeshop</title>
-    <link href="/css/styles.css" rel="stylesheet"/>
+    <title>Admin - TemplateShop</title>
+    <link href="/css/admin/styles.css" rel="stylesheet"/>
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
 </head>
 <body class="sb-nav-fixed">
@@ -63,6 +63,6 @@
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         crossorigin="anonymous"></script>
-<script src="/js/scripts.js"></script>
+<script src="/js/admin/scripts.js"></script>
 </body>
 </html>

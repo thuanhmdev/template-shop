@@ -21,19 +21,22 @@ public class Product {
     @NotBlank(message = "Product Không thể bỏ trống")
     private String name;
 
-    @DecimalMin(value = "0", inclusive = false, message="Giá tiền phải lớn hơn 0")
+    @DecimalMin(value = "0", inclusive = true, message="Giá tiền phải lớn hơn 0")
     private double price;
 
     @Column(columnDefinition = "MEDIUMTEXT")
     private String description;
 
-    @NotBlank(message="Mô tả ngắn không được bỏ trống")
+    @Column(columnDefinition = "MEDIUMTEXT")
     private String shortDescription;
 
     private String image;
-    @Min(value = 1, message = "Số lượng phải lớn hơn bằng 1")
-    private long quantity;
+
     private long sold;
+
+    private String linkPreview;
+
+    private String linkSource;
 
     @OneToMany(mappedBy = "product")
     @JsonIgnore
