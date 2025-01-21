@@ -1,4 +1,4 @@
-package com.themeshop.themeshop.service;
+package com.templateshop.templateshop.service;
 
 import jakarta.servlet.ServletContext;
 import org.springframework.stereotype.Service;

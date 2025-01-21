@@ -1,7 +1,7 @@
-package com.themeshop.themeshop.controller.client;
+package com.templateshop.templateshop.controller.client;
 
-import com.themeshop.themeshop.model.Product;
-import com.themeshop.themeshop.service.ProductService;
+import com.templateshop.templateshop.model.Product;
+import com.templateshop.templateshop.service.ProductService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;

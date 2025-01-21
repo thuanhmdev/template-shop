@@ -1,7 +1,7 @@
-package com.themeshop.themeshop.service;
+package com.templateshop.templateshop.service;
 
-import com.themeshop.themeshop.model.User;
-import com.themeshop.themeshop.repository.UserRepository;
+import com.templateshop.templateshop.model.User;
+import com.templateshop.templateshop.repository.UserRepository;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;

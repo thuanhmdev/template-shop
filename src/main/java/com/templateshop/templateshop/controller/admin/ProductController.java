@@ -1,8 +1,8 @@
-package com.themeshop.themeshop.controller.admin;
+package com.templateshop.templateshop.controller.admin;
 
-import com.themeshop.themeshop.model.Product;
-import com.themeshop.themeshop.service.ProductService;
-import com.themeshop.themeshop.service.UploadService;
+import com.templateshop.templateshop.model.Product;
+import com.templateshop.templateshop.service.UploadService;
+import com.templateshop.templateshop.service.ProductService;
 import jakarta.validation.Valid;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;

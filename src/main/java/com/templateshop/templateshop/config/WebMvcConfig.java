@@ -1,4 +1,4 @@
-package com.themeshop.themeshop.config;
+package com.templateshop.templateshop.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

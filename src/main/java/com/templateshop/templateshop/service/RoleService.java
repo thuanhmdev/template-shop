@@ -1,7 +1,7 @@
-package com.themeshop.themeshop.service;
+package com.templateshop.templateshop.service;
 
-import com.themeshop.themeshop.model.Role;
-import com.themeshop.themeshop.repository.RoleRepository;
+import com.templateshop.templateshop.model.Role;
+import com.templateshop.templateshop.repository.RoleRepository;
 import jakarta.annotation.PostConstruct;
 import org.springframework.stereotype.Service;
 

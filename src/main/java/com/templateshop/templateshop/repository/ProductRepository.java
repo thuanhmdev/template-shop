@@ -1,6 +1,6 @@
-package com.themeshop.themeshop.repository;
+package com.templateshop.templateshop.repository;
 
-import com.themeshop.themeshop.model.Product;
+import com.templateshop.templateshop.model.Product;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface ProductRepository extends JpaRepository<Product, String> {

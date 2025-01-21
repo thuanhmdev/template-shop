@@ -1,4 +1,4 @@
-package com.themeshop.themeshop.model;
+package com.templateshop.templateshop.model;
 
 import jakarta.persistence.*;
 import lombok.Getter;

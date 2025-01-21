@@ -1,6 +1,6 @@
-package com.themeshop.themeshop.repository;
+package com.templateshop.templateshop.repository;
 
-import com.themeshop.themeshop.model.Role;
+import com.templateshop.templateshop.model.Role;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface RoleRepository extends JpaRepository<Role, String> {

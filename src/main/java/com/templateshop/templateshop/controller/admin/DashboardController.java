@@ -1,6 +1,6 @@
-package com.themeshop.themeshop.controller.admin;
+package com.templateshop.templateshop.controller.admin;
 
-import com.themeshop.themeshop.service.UserService;
+import com.templateshop.templateshop.service.UserService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
