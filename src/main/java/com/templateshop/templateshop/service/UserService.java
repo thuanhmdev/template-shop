@@ -1,5 +1,6 @@
 package com.templateshop.templateshop.service;
 
+import com.templateshop.templateshop.dto.RegisterDTO;
 import com.templateshop.templateshop.model.User;
 import com.templateshop.templateshop.repository.UserRepository;
 import org.springframework.data.domain.Page;
@@ -9,9 +10,11 @@ import org.springframework.stereotype.Service;
 @Service
 public class UserService {
     final UserRepository userRepository;
+    private RoleService roleService;
 
-    public UserService(UserRepository userRepository) {
+    public UserService(UserRepository userRepository, RoleService roleService) {
         this.userRepository = userRepository;
+        this.roleService = roleService;
     }
 
     public Page<User> getAllUsers(Pageable pageable) {
@@ -43,5 +46,18 @@ public class UserService {
         this.userRepository.deleteById(id);
     }
 
+    public Boolean checkEmailExist(String email) {
+        return this.userRepository.existsByEmail(email);
+    }
+
+    public void registerUser(RegisterDTO registerDTO) {
+        System.out.println(registerDTO.getPassword());
+        User user = new User();
+        user.setEmail(registerDTO.getEmail());
+        user.setPassword(registerDTO.getPassword());
+        user.setFullName(registerDTO.getFullName());
+        user.setRole(this.roleService.getRoleUser());
+        this.userRepository.save(user);
+    }
 
 }

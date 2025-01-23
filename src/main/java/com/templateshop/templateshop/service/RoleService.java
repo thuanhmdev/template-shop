@@ -10,15 +10,13 @@ import java.util.List;
 @Service("RoleService")
 public class RoleService {
     final RoleRepository roleRepository;
-
     public RoleService(RoleRepository roleRepository) {
         this.roleRepository = roleRepository;
     }
 
-
     @PostConstruct
     public void init() {
-        if(roleRepository.count() <=2 ) {
+        if(roleRepository.count() <2 ) {
             createRole("ADMIN", "FULL quyền");
             createRole("USER", "Người dùng");
         }
@@ -33,6 +31,10 @@ public class RoleService {
 
     public List<Role> getAllRole() {
         return this.roleRepository.findAll();
+    }
+
+    public Role getRoleUser() {
+        return this.roleRepository.findByName("USER");
     }
 
 }
